@@ -1,0 +1,23 @@
+body {
+    background-color: #FFD700;
+    font-family: 'Frijole', cursive;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.submit-button {
+    margin-bottom: 50px;
+}
