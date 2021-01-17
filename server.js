@@ -8,16 +8,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-var plyr = req.body.player;
 
-mongoose.connect("mongodb://localhost:27017/playersDB", {useNewUrlParser: true} );
-
-const playerSchema = new mongoose.Schema ({
-    name: String,
-    score: Number
-});
-
-const Player = mongoose.model("Player", playerSchema);
 
 app.listen(3000, function(){
     console.log("Server is running on port 3000.");
@@ -28,6 +19,8 @@ app.get("/", function(req, res){
 });
 
 app.post("/quiz.html", function(req, res){
+
+    var plyr = req.body.player;
 
     res.render("questions.ejs", {playerName: plyr});
 });
@@ -67,11 +60,6 @@ app.post("/results.html", function(req, res){
     if (q5_answer === "q5-choice2"){
         points++;
     }
-
-    const player = new Player({
-        name: plyr,
-        score: points
-    });
 
     /* The score ("points"), resulting from the control flow are rendered on the score page (score.ejs) */
 
