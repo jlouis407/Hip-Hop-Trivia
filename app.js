@@ -11,8 +11,8 @@ app.use(express.static("public"));
 mongoose.connect("mongodb://localhost:27017/playersDB", {useNewUrlParser: true})
 
 const playerSchema = {
-    name: String,
-    score: Number
+    playerName: String,
+    playerScore: Number
 }
 
 const Player = mongoose.model("Player", playerSchema);
@@ -44,31 +44,32 @@ app.post("/results.html", function(req, res){
 
     /* Each of the user's answers are evaluated for their accuracy. If an answer is correct, the points are incremented*/
     
-    if (q1_answer === "q1-choice2"){
-        points++;
+    if (q1_answer === "q1_choice2"){
+        ++points;
     }
 
-    if(q2_answer === "q2-choice4"){
-        points++;
+    if (q2_answer === "q2_choice4"){
+        ++points;
     }
 
-    if (q3_answer === "q3-choice1"){
-        points++;
+    if (q3_answer === "q3_choice1"){
+        ++points;
     }
 
-    if (q4_answer === "q4-choice3"){
-        points++;
+    if (q4_answer === "q4_choice3"){
+        ++points;
     }
 
-    if (q5_answer === "q5-choice2"){
-        points++;
+    if (q5_answer === "q5_choice2"){
+        ++points;
     }
+
 
     /* The score ("points"), resulting from the control flow are rendered on the score page (score.ejs) */
 
     const player = new Player({
-        name: plyr,
-        score: points
+        playerName: plyr,
+        playerScore: points
     });
 
     player.save();
