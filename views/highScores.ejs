@@ -10,13 +10,11 @@
     </head>
 
     <body>
-        <h1>Results</h1>
-        <p>Your score is: <%= score %> out 5.</p>
 
-        <div>
-            <form action="highScores.html" method="POST">
-                <button type="submit">High Scores</button>
-            </form>
-        </div>
+        <h1>High Scores</h1>
+
+       <% newListPlayers.forEach(function(player){ %>
+            <p><%= player.playerName + " " + player.playerScore %></p>
+       <%  }) %>
 
     </body>

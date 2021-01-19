@@ -78,6 +78,11 @@ app.post("/results.html", function(req, res){
 
 });
 
+app.post("/highScores.html", function(req, res){
 
+    Player.find({}, function(err, foundPlayers){
+        res.render("highScores.ejs", {newListPlayers: foundPlayers});
+    });
+});
 
 
