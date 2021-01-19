@@ -8,11 +8,14 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true})
+mongoose.connect("mongodb://localhost:27017/playersDB", {useNewUrlParser: true})
 
 const playerSchema = {
-    
+    name: String,
+    score: Number
 }
+
+const Player = mongoose.model("Player", playerSchema);
 
 app.listen(3000, function(){
     console.log("Server is running on port 3000.");
@@ -22,16 +25,12 @@ app.get("/", function(req, res){
     res.sendFile(__dirname + "/index.html");
 });
 
-app.post("/quiz.html", function(req, res){
-
-    var plyr = req.body.player;
-
-    res.render("questions.ejs", {playerName: plyr});
-});
 
 /* The handling of the user's responses */
 
 app.post("/results.html", function(req, res){
+
+    var plyr = req.body.player;
 
     /* The user's quantity of points is initialized to 0 */
     var points = 0;
@@ -66,6 +65,13 @@ app.post("/results.html", function(req, res){
     }
 
     /* The score ("points"), resulting from the control flow are rendered on the score page (score.ejs) */
+
+    const player = new Player({
+        name: plyr,
+        score: points
+    });
+
+    player.save();
 
     res.render("score.ejs", {score: points});
 
