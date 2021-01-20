@@ -1,6 +1,6 @@
 body {
     background-color: #FFD700;
-    font-family: 'Frijole', cursive;
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
 }
 
@@ -18,6 +18,22 @@ h2 {
     margin-bottom: 100px;
 }
 
+/* The division where the user is asked to enter their name */
+#enterName {
+    margin-bottom: 75px;
+}
+
+/* The division of each question */
+.question {
+    margin-bottom: 30px;
+}
+
 .submit-button {
     margin-bottom: 50px;
+    margin-left: 50px;
+    
+}
+
+ul {
+    list-style-type: none;
 }

@@ -10,165 +10,177 @@
     </head>
 
     <body>
-        <h1>Hip-Hop Trivia</h1>
+        <h1>HIP HOP TRIVIA</h1>
 
         <!--Five Hip-Hop Questions, each with four options-->
         <form class="" action="/results.html" method="POST">
 
-          <fieldset>
-            <legend>Enter Your Name & Fill Out The Answers!</legend>
-            <input type="text" name="player"><br><br>
-          </fieldset>
+          <div id="enterName">
+            <fieldset>
+              <legend>Enter Your Name & Fill Out The Answers!</legend>
+              <input type="text" name="player" placeholder="Your Name" required><br><br>
+            </fieldset>
+          </div>
 
-          <fieldset>
-            <legend>What year did hip-hop begin?</legend>
-            <ul>
-              <li>
-                <label for="q1-choice1">
-                  <input type="radio" id="q1-choice1" name="q1" value="q1_choice1">
-                  1970
-                </label>
-              </li>
-              <li>
-                <label for="q1-choice2">
-                  <input type="radio" id="q1-choice2" name="q1" value="q1_choice2">
-                  1973
-                </label>
-              </li>
-              <li>
-                <label for="q1-choice3">
-                  <input type="radio" id="q1-choice3" name="q1" value="q1_choice3">
-                  1975
-                </label>
-              </li>
-              <li>
-                <label for="q1-choice4">
-                  <input type="radio" id="q1-choice4" name="q1" value="q1_choice4">
-                  1979
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="question">
+            <fieldset>
+              <legend>What year did hip-hop begin?</legend>
+              <ul>
+                <li>
+                  <label for="q1-choice1">
+                    <input type="radio" id="q1-choice1" name="q1" value="q1_choice1">
+                    1970
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-choice2">
+                    <input type="radio" id="q1-choice2" name="q1" value="q1_choice2">
+                    1973
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-choice3">
+                    <input type="radio" id="q1-choice3" name="q1" value="q1_choice3">
+                    1975
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-choice4">
+                    <input type="radio" id="q1-choice4" name="q1" value="q1_choice4">
+                    1979
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
-          <fieldset>
-            <legend>What was the first rap album to go platinum?</legend>
-            <ul>
-              <li>
-                <label for="q2-choice1">
-                  <input type="radio" id="q2-choice1" name="q2" value="q2_choice1">
-                  Radio by LL Cool J
-                </label>
-              </li>
-              <li>
-                <label for="q2-choice2">
-                  <input type="radio" id="q2-choice2" name="q2" value="q2_choice2">
-                  Please Hammer Don't Hurt 'Em by MC Hammer
-                </label>
-              </li>
-              <li>
-                <label for="q2-choice3">
-                  <input type="radio" id="q2-choice3" name="q2" value="q2_choice3">
-                  The Chronic by Dr. Dre
-                </label>
-              </li>
-              <li>
-                <label for="q2-choice4">
-                  <input type="radio" id="q2-choice4" name="q2" value="q2_choice4">
-                  Raising Hell by Run DMC
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="question">
+            <fieldset>
+              <legend>What was the first rap album to go platinum?</legend>
+              <ul>
+                <li>
+                  <label for="q2-choice1">
+                    <input type="radio" id="q2-choice1" name="q2" value="q2_choice1">
+                    Radio by LL Cool J
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-choice2">
+                    <input type="radio" id="q2-choice2" name="q2" value="q2_choice2">
+                    Please Hammer Don't Hurt 'Em by MC Hammer
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-choice3">
+                    <input type="radio" id="q2-choice3" name="q2" value="q2_choice3">
+                    The Chronic by Dr. Dre
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-choice4">
+                    <input type="radio" id="q2-choice4" name="q2" value="q2_choice4">
+                    Raising Hell by Run DMC
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
-          <fieldset>
-            <legend>Which region started gansta rap?</legend>
-            <ul>
-              <li>
-                <label for="q3-choice1">
-                  <input type="radio" id="q3-choice1" name="q3" value="q3_choice1">
-                  West Coast                
-                </label>
-              </li>
-              <li>
-                <label for="q3-choice2">
-                  <input type="radio" id="q3-choice2" name="q3" value="q3_choice2">
-                  East Coast
-                </label>
-              </li>
-              <li>
-                <label for="q3-choice3">
-                  <input type="radio" id="q3-choice3" name="q3" value="q3_choice3">
-                  The South
-                </label>
-              </li>
-              <li>
-                <label for="q3-choice4">
-                  <input type="radio" id="q3-choice4" name="q3" value="q3_choice4">
-                  The Midwest
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          
-          <fieldset>
-            <legend>Who was the only rapper to win an Album of the Year grammy?</legend>
-            <ul>
-              <li>
-                <label for="q4-choice1">
-                  <input type="radio" id="q4-choice1" name="q4" value="q4_choice1">
-                  Kendrick Lamar
-                </label>
-              </li>
-              <li>
-                <label for="q4-choice2">
-                  <input type="radio" id="q4-choice2" name="q4" value="q4_choice2">
-                  50 Cent
-                </label>
-              </li>
-              <li>
-                <label for="q4-choice3">
-                  <input type="radio" id="q4-choice3" name="q4" value="q4_choice3">
-                  Lauryn Hill
-                </label>
-              </li>
-              <li>
-                <label for="q4-choice4">
-                  <input type="radio" id="q4-choice4" name="q4" value="q4_choice4">
-                  Missy Elliot
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="question">
+            <fieldset>
+              <legend>Which region started gansta rap?</legend>
+              <ul>
+                <li>
+                  <label for="q3-choice1">
+                    <input type="radio" id="q3-choice1" name="q3" value="q3_choice1">
+                    West Coast                
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-choice2">
+                    <input type="radio" id="q3-choice2" name="q3" value="q3_choice2">
+                    East Coast
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-choice3">
+                    <input type="radio" id="q3-choice3" name="q3" value="q3_choice3">
+                    The South
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-choice4">
+                    <input type="radio" id="q3-choice4" name="q3" value="q3_choice4">
+                    The Midwest
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
-          <fieldset>
-            <legend>Which iconic rap feud involved the tracks "Takeover" and "Ether"?</legend>
-            <ul>
-              <li>
-                <label for="q5-choice1">
-                  <input type="radio" id="q5-choice1" name="q5" value="q5_choice1">
-                  Ice Cube vs. N.W.A.
-                </label>
-              </li>
-              <li>
-                <label for="q5-choice2">
-                  <input type="radio" id="q5-choice2" name="q5" value="q5_choice2">
-                  Jay Z vs. Nas
-                </label>
-              </li>
-              <li>
-                <label for="q5-choice3">
-                  <input type="radio" id="q5-choice3" name="q5" value="q5_choice3">
-                  Drake vs. Meek Mill
-                </label>
-              </li>
-              <li>
-                <label for="q5-choice4">
-                  <input type="radio" id="q5-choice4" name="q5" value="q5_choice4">
-                  50 Cent vs. Ja Rule
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="question">
+            <fieldset>
+              <legend>Who was the only rapper to win an Album of the Year grammy?</legend>
+              <ul>
+                <li>
+                  <label for="q4-choice1">
+                    <input type="radio" id="q4-choice1" name="q4" value="q4_choice1">
+                    Kendrick Lamar
+                  </label>
+                </li>
+                <li>
+                  <label for="q4-choice2">
+                    <input type="radio" id="q4-choice2" name="q4" value="q4_choice2">
+                    50 Cent
+                  </label>
+                </li>
+                <li>
+                  <label for="q4-choice3">
+                    <input type="radio" id="q4-choice3" name="q4" value="q4_choice3">
+                    Lauryn Hill
+                  </label>
+                </li>
+                <li>
+                  <label for="q4-choice4">
+                    <input type="radio" id="q4-choice4" name="q4" value="q4_choice4">
+                    Missy Elliot
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        
+          <div class="question">
+            <fieldset>
+              <legend>Which iconic rap feud involved the tracks "Takeover" and "Ether"?</legend>
+              <ul>
+                <li>
+                  <label for="q5-choice1">
+                    <input type="radio" id="q5-choice1" name="q5" value="q5_choice1">
+                    Ice Cube vs. N.W.A.
+                  </label>
+                </li>
+                <li>
+                  <label for="q5-choice2">
+                    <input type="radio" id="q5-choice2" name="q5" value="q5_choice2">
+                    Jay Z vs. Nas
+                  </label>
+                </li>
+                <li>
+                  <label for="q5-choice3">
+                    <input type="radio" id="q5-choice3" name="q5" value="q5_choice3">
+                    Drake vs. Meek Mill
+                  </label>
+                </li>
+                <li>
+                  <label for="q5-choice4">
+                    <input type="radio" id="q5-choice4" name="q5" value="q5_choice4">
+                    50 Cent vs. Ja Rule
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
           <div class="submit-button">
             <input type="submit" value="Submit For Results">
