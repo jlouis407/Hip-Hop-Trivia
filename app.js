@@ -81,6 +81,11 @@ app.post("/results.html", function(req, res){
 app.post("/highScores.html", function(req, res){
 
     Player.find({}, function(err, foundPlayers){
+
+        foundPlayers.sort(function(a, b){
+            return b.playerScore - a.playerScore;
+        });
+
         res.render("highScores.ejs", {newListPlayers: foundPlayers});
     });
 });
