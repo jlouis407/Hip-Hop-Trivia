@@ -9,6 +9,7 @@ form {
 }
 
 h1 {
+    font-family: 'Orbitron', sans-serif;
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -16,6 +17,30 @@ h1 {
 h2 {
     margin-top: 20px;
     margin-bottom: 100px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 50px;
+}
+
+input[type="radio"]:checked + label {
+    background-color: black;
+    color: #DCDCDC;
+}
+
+
+
+legend {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 /* The division where the user is asked to enter their name */
