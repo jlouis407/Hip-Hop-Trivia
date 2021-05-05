@@ -16,10 +16,30 @@
     <body>
 
         <h1>High Scores</h1>
+<!--
+        <table>
+            <tr>
+                <th>Player</th>
+                <th>Score</th>
+            </tr>
+            <% newListPlayers.forEach(function(player){ %>
+            <tr>
+                <th><%= player.playerName %></th>
+                <th><%= player.playerScore %></th>
+            </tr>
+
+            <% }) %>
+        </table>
+
+    -->
+
+        
 
        <% newListPlayers.forEach(function(player){ %>
             <p><%= player.playerName + " - " + player.playerScore %></p>
        <%  }) %>
+
+
 
 
        <div>
