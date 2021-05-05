@@ -52,10 +52,11 @@ input[type="radio"]:checked + label {
 }
 
 input[type="submit"]{
-    background-color: black; /* Green */
+    background-color: black; 
     border: none;
     color: white;
     padding: 15px 32px;
+    margin-top: 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -92,9 +93,21 @@ p {
 
 .submit-button {
     font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 50px;
     
+}
+
+table {
+    border: 1px solid black;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px;
 }
 
 ul {
