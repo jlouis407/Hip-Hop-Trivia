@@ -4,6 +4,17 @@ body {
     text-align: center;
 }
 
+button {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 form {
     margin-bottom: 50px;
 }
@@ -68,6 +79,10 @@ legend {
 /* The division where the user is asked to enter their name */
 #enterName {
     margin-bottom: 75px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
 }
 
 /* The division of each question */
