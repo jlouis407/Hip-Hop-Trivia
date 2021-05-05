@@ -19,8 +19,13 @@ const playerSchema = {
 
 const Player = mongoose.model("Player", playerSchema);
 
-app.listen(3000, function(){
-    console.log("Server is running on port 3000.");
+let port = process.env.PORT;
+if (port == null || port == ""){
+    port = 3000;
+}
+
+app.listen(port, function(){
+    console.log("Server is running successfully.");
 });
 
 app.get("/", function(req, res){
