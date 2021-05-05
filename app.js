@@ -41,6 +41,11 @@ app.post("/results.html", function(req, res){
     var q3_answer = req.body.q3;
     var q4_answer = req.body.q4;
     var q5_answer = req.body.q5;
+    var q6_answer = req.body.q6;
+    var q7_answer = req.body.q7;
+    var q8_answer = req.body.q8;
+    var q9_answer = req.body.q9;
+    var q10_answer = req.body.q10;
 
     /* Each of the user's answers are evaluated for their accuracy. If an answer is correct, the points are incremented*/
     
@@ -56,11 +61,31 @@ app.post("/results.html", function(req, res){
         ++points;
     }
 
-    if (q4_answer === "q4_choice3"){
+    if (q4_answer === "q4_choice1"){
         ++points;
     }
 
     if (q5_answer === "q5_choice2"){
+        ++points;
+    }
+
+    if (q6_answer === "q6_choice3"){
+        ++points;
+    }
+
+    if (q7_answer === "q7_choice4"){
+        ++points;
+    }
+
+    if (q8_answer === "q8_choice3"){
+        ++points;
+    }
+
+    if (q9_answer === "q9_choice4"){
+        ++points;
+    }
+
+    if (q10_answer === "q10_choice2"){
         ++points;
     }
 
